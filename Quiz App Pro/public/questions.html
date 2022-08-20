@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      .question input{
+        padding: 3px 5px;
+      }
+    </style>
+    <title>Questions</title>
+  </head>
+  <body class="bg-primary container">
+    <div class="row bg-primary d-flex justify-content-center align-items-center" style=" height:100vh;">
+        <div class="col-md-6">
+          <div class="rounded bg-light shadow p-4 d-flex flex-column fs-5 question ">
+            <p class="text-center display-5">Add Question here</p>
+            <input type="text" placeholder="Question" id="question" class="my-3">
+            <input type="text" placeholder="1st Option " id="option1" class="my-3">
+            <input type="text" placeholder="2nd Option " id="option2" class="my-3">
+            <input type="text" placeholder="3rd Option " id="option3" class="my-3">
+            <input type="text" placeholder="4th Option " id="option4" class="my-3">
+            <input type="text" placeholder="Correct Answer" id="answer" class="my-3">
+            <button class="btn bg-success mx-5 mt-3 text-white" onclick="addQuestion()">Add Question</button>
+        </div>
+        </div>
+     </div>
+     
+     <div>
+      <p class="my-5 text-center display-1 text-white fw-bold">Questions</p>
+      <div id="parent" class=" d-flex flex-column align-items-center justify-content-center">
+        
+     </div>
+     </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script  type="module" src="JS/questionsdata.js"></script>
+  </body>
+</html>
+
